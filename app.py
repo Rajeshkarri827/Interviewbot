@@ -102,7 +102,7 @@ def get_bot_response(user_input):
             return f"**Question {idx + 2}:** {st.session_state.questions[idx + 1]}"
         else:
             st.session_state.step += 1
-            return "🎉 Thank you for answering all the questions! Generating your feedback..."
+            return "🎉 Thank you for answering all the questions!Enter ok to generate your feedback..."
 
     elif step == 5:
         # Generate feedback
