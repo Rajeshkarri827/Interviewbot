@@ -16,7 +16,7 @@ def generate_questions(role):
         genai.configure(api_key=api_key)
 
         # Use Gemini 1.5 Pro model
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.0-flash-lite")
 
         # Prompt
         prompt = f"Generate 5 short, clear, technical interview questions for the role: {role}."
